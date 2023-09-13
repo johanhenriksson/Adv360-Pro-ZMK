@@ -1,12 +1,12 @@
-macro_tmux-prev: macro_tmux-prev{
+macro_tmux_prev: macro_tmux_prev{
 compatible = "zmk,behavior-macro";
-label = "macro_tmux-prev";
+label = "macro_tmux_prev";
 #binding-cells = <0>;
 bindings = <&kp LC(SPACE)>, <&kp LC(P)>;
 };
-macro_tmux-next: macro_tmux-next{
+macro_tmux_next: macro_tmux_next{
 compatible = "zmk,behavior-macro";
-label = "macro_tmux-next";
+label = "macro_tmux_next";
 #binding-cells = <0>;
 bindings = <&kp LC(SPACE)>, <&kp LC(N)>;
 };
