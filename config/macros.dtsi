@@ -1,3 +1,15 @@
+macro_tmux-prev: macro_tmux-prev{
+compatible = "zmk,behavior-macro";
+label = "macro_tmux-prev";
+#binding-cells = <0>;
+bindings = <&kp LC(SPACE)>, <&kp LC(P)>;
+};
+macro_tmux-next: macro_tmux-next{
+compatible = "zmk,behavior-macro";
+label = "macro_tmux-next";
+#binding-cells = <0>;
+bindings = <&kp LC(SPACE)>, <&kp LC(N)>;
+};
 macro_spot: macro_spot{
 compatible = "zmk,behavior-macro";
 label = "macro_spot";
