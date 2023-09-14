@@ -1,8 +1,14 @@
+macro_iterm: macro_iterm{
+compatible = "zmk,behavior-macro";
+label = "macro_iterm";
+#binding-cells = <0>;
+bindings = <&kp LG(LC(LA(LS(T))))>;
+};
 macro_game: macro_game{
 compatible = "zmk,behavior-macro";
 label = "macro_game";
 #binding-cells = <0>;
-bindings = <&kp LG(LS(SPACE))>, <&tog 4>;
+bindings = <&kp LS(LG(SPACE))>, <&tog 4>;
 };
 macro_tmux_prev: macro_tmux_prev{
 compatible = "zmk,behavior-macro";
