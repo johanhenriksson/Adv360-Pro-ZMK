@@ -12,7 +12,7 @@
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/pointing.h>
 
-#define HM_TAP_FLAVOR tap-preferred
+#define HM_TAP_FLAVOR "tap-preferred"
 #define HM_QUICKTAP_MS 130
 #define HM_TAPPING_TERM_MS 160
 
@@ -45,7 +45,7 @@
         #binding-cells = <2>;
         tapping-term-ms = <HM_TAPPING_TERM_MS>;
         quick_tap_ms = <HM_QUICKTAP_MS>;
-        flavor = "HM_TAP_FLAVOR";
+        flavor = HM_TAP_FLAVOR;
         bindings = <&kp>, <&kp>;
     };
 
@@ -55,7 +55,7 @@
         #binding-cells = <2>;
         tapping-term-ms = <HM_TAPPING_TERM_MS>;
         quick_tap_ms = <HM_QUICKTAP_MS>;
-        flavor = "HM_TAP_FLAVOR";
+        flavor = HM_TAP_FLAVOR;
         bindings = <&kp>, <&kp>;
         hold-trigger-key-positions = <KEYS_RIGHT THUMBS>;
     };
@@ -66,7 +66,7 @@
         #binding-cells = <2>;
         tapping-term-ms = <HM_TAPPING_TERM_MS>;
         quick_tap_ms = <HM_QUICKTAP_MS>;
-        flavor = "HM_TAP_FLAVOR";
+        flavor = HM_TAP_FLAVOR;
         bindings = <&kp>, <&kp>;
         hold-trigger-key-positions = <KEYS_LEFT THUMBS>;
     };
@@ -77,7 +77,7 @@
         #binding-cells = <2>;
         tapping-term-ms = <HM_TAPPING_TERM_MS>;
         quick_tap_ms = <HM_QUICKTAP_MS>;
-        flavor = "HM_TAP_FLAVOR";
+        flavor = HM_TAP_FLAVOR;
         bindings = <&mo>, <&kp>;
         hold-trigger-key-positions = <KEYS_RIGHT THUMBS>;
     };
@@ -88,7 +88,7 @@
         #binding-cells = <2>;
         tapping-term-ms = <HM_TAPPING_TERM_MS>;
         quick_tap_ms = <HM_QUICKTAP_MS>;
-        flavor = "HM_TAP_FLAVOR";
+        flavor = HM_TAP_FLAVOR;
         bindings = <&mo>, <&kp>;
         hold-trigger-key-positions = <KEYS_LEFT THUMBS>;
     };  };
