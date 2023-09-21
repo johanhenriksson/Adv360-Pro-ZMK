@@ -7,9 +7,9 @@
 #include <behaviors.dtsi>
 {{behaviour_includes}}
 
-#define HM_TAP_FLAVOR tap-preferred
-#define HM_QUICKTAP_MS 130
-#define HM_TAPPING_TERM_MS 160
+#define HM_TAP_FLAVOR "tap-preferred"
+#define HM_QUICKTAP_MS 120
+#define HM_TAPPING_TERM_MS 150
 
 #define KEYS_LEFT 0 1 2 3 4 5 6 \
                   14 15 16 17 18 19 20 \
@@ -39,50 +39,46 @@
         #binding-cells = <2>;
         tapping-term-ms = <HM_TAPPING_TERM_MS>;
         quick_tap_ms = <HM_QUICKTAP_MS>;
-        flavor = "HM_TAP_FLAVOR";
+        flavor = HM_TAP_FLAVOR;
         bindings = <&kp>, <&kp>;
     };
 
     hm_l: homerow_mods_left {
         compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_MODS_LEFT";
         #binding-cells = <2>;
         tapping-term-ms = <HM_TAPPING_TERM_MS>;
         quick_tap_ms = <HM_QUICKTAP_MS>;
-        flavor = "HM_TAP_FLAVOR";
+        flavor = HM_TAP_FLAVOR;
         bindings = <&kp>, <&kp>;
         hold-trigger-key-positions = <KEYS_RIGHT THUMBS>;
     };
 
     hm_r: homerow_mods_right {
         compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_MODS_RIGHT";
         #binding-cells = <2>;
         tapping-term-ms = <HM_TAPPING_TERM_MS>;
         quick_tap_ms = <HM_QUICKTAP_MS>;
-        flavor = "HM_TAP_FLAVOR";
+        flavor = HM_TAP_FLAVOR;
         bindings = <&kp>, <&kp>;
         hold-trigger-key-positions = <KEYS_LEFT THUMBS>;
     };
 
     hl_l: homerow_layer_left {
         compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_LAYER_LEFT";
         #binding-cells = <2>;
         tapping-term-ms = <HM_TAPPING_TERM_MS>;
         quick_tap_ms = <HM_QUICKTAP_MS>;
-        flavor = "HM_TAP_FLAVOR";
+        flavor = HM_TAP_FLAVOR;
         bindings = <&mo>, <&kp>;
         hold-trigger-key-positions = <KEYS_RIGHT THUMBS>;
     };
 
     hl_r: homerow_layer_right {
         compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_LAYER_RIGHT";
         #binding-cells = <2>;
         tapping-term-ms = <HM_TAPPING_TERM_MS>;
         quick_tap_ms = <HM_QUICKTAP_MS>;
-        flavor = "HM_TAP_FLAVOR";
+        flavor = HM_TAP_FLAVOR;
         bindings = <&mo>, <&kp>;
         hold-trigger-key-positions = <KEYS_LEFT THUMBS>;
     };  };
