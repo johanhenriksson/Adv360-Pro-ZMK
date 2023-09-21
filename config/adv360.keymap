@@ -10,7 +10,7 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
 
-#define HM_TAP_FLAVOR "tap-preferred"
+#define HM_TAP_FLAVOR tap-preferred
 #define HM_QUICKTAP_MS 130
 #define HM_TAPPING_TERM_MS 160
 
@@ -42,7 +42,7 @@
         #binding-cells = <2>;
         tapping-term-ms = <HM_TAPPING_TERM_MS>;
         quick_tap_ms = <HM_QUICKTAP_MS>;
-        flavor = HM_TAP_FLAVOR;
+        flavor = "HM_TAP_FLAVOR";
         bindings = <&kp>, <&kp>;
     };
 
@@ -52,7 +52,7 @@
         #binding-cells = <2>;
         tapping-term-ms = <HM_TAPPING_TERM_MS>;
         quick_tap_ms = <HM_QUICKTAP_MS>;
-        flavor = HM_TAP_FLAVOR;
+        flavor = "HM_TAP_FLAVOR";
         bindings = <&kp>, <&kp>;
         hold-trigger-key-positions = <KEYS_RIGHT THUMBS>;
     };
@@ -63,7 +63,7 @@
         #binding-cells = <2>;
         tapping-term-ms = <HM_TAPPING_TERM_MS>;
         quick_tap_ms = <HM_QUICKTAP_MS>;
-        flavor = HM_TAP_FLAVOR;
+        flavor = "HM_TAP_FLAVOR";
         bindings = <&kp>, <&kp>;
         hold-trigger-key-positions = <KEYS_LEFT THUMBS>;
     };
@@ -74,7 +74,7 @@
         #binding-cells = <2>;
         tapping-term-ms = <HM_TAPPING_TERM_MS>;
         quick_tap_ms = <HM_QUICKTAP_MS>;
-        flavor = HM_TAP_FLAVOR;
+        flavor = "HM_TAP_FLAVOR";
         bindings = <&mo>, <&kp>;
         hold-trigger-key-positions = <KEYS_RIGHT THUMBS>;
     };
@@ -85,7 +85,7 @@
         #binding-cells = <2>;
         tapping-term-ms = <HM_TAPPING_TERM_MS>;
         quick_tap_ms = <HM_QUICKTAP_MS>;
-        flavor = HM_TAP_FLAVOR;
+        flavor = "HM_TAP_FLAVOR";
         bindings = <&mo>, <&kp>;
         hold-trigger-key-positions = <KEYS_LEFT THUMBS>;
     };  };
@@ -96,11 +96,11 @@
 
         default_layer {
             bindings = <
-                &kp EQUAL         &kp N1        &kp N2        &kp N3          &kp N4     &kp N5                   &tog 1                                                                              &mo 3     &kp N6          &kp N7        &kp N8        &kp N9                 &kp N0                        &kp MINUS
-                  &kp TAB          &kp Q         &kp W         &kp E           &kp R      &kp T              &macro_game                                                                        &macro_game      &kp Y           &kp U         &kp I         &kp O                  &kp P                         &kp BSLH
- &mt LC(LA(LS(LGUI))) ESC  &hm_l LCTRL A  &hm_l LALT S  &hm_l LGUI D  &hm_l LSHIFT F  &hl_l 5 G             &macro_iterm   &macro_tmux  &kp LALT                  &kp RCTRL  &kp RIGHT_COMMAND    &kp MINUS  &hl_r 5 H  &hm_r RSHIFT J  &hm_r RGUI K  &hm_r RALT L  &hm_r RCTRL SEMICOLON  &mt RC(RA(RS(RGUI))) APOSTROPHE
-                &kp LSHFT          &kp Z         &kp X         &kp C           &kp V      &kp B                                         &kp HOME                  &kp PG_UP                                      &kp N         &lt 6 M     &kp COMMA       &kp DOT               &kp FSLH                        &kp RSHFT
-                    &mo 2      &kp GRAVE    &caps_word      &kp LEFT       &kp RIGHT                       &kp BACKSPACE  &lt 7 DELETE   &kp END                  &kp PG_DN   &mt RSHIFT ENTER    &kp SPACE                     &kp UP      &kp DOWN      &kp LBKT               &kp RBKT                            &mo 2
+                &kp EQUAL         &kp N1        &kp N2        &kp N3          &kp N4     &kp N5                   &tog 1                                                                               &mo 3     &kp N6          &kp N7        &kp N8        &kp N9                 &kp N0                        &kp MINUS
+                  &kp TAB          &kp Q         &kp W         &kp E           &kp R      &kp T              &macro_game                                                                         &macro_game      &kp Y           &kp U         &kp I         &kp O                  &kp P                         &kp BSLH
+ &mt LC(LA(LS(LGUI))) ESC  &hm_l LCTRL A  &hm_l LALT S  &hm_l LGUI D  &hm_l LSHIFT F  &hl_l 5 G                    &none   &macro_tmux   &kp LALT                  &kp RCTRL  &kp RIGHT_COMMAND        &none  &hl_r 5 H  &hm_r RSHIFT J  &hm_r RGUI K  &hm_r RALT L  &hm_r RCTRL SEMICOLON  &mt RC(RA(RS(RGUI))) APOSTROPHE
+               &caps_word          &kp Z         &kp X         &kp C           &kp V      &kp B                                          &kp HOME                  &kp PG_UP                                      &kp N         &lt 6 M     &kp COMMA       &kp DOT               &kp FSLH                       &caps_word
+                    &mo 2      &kp GRAVE         &none      &kp LEFT       &kp RIGHT                       &kp BACKSPACE  &lt 7 DELETE  &lt 1 END                  &kp PG_DN   &mt RSHIFT ENTER    &kp SPACE                     &kp UP      &kp DOWN      &kp LBKT               &kp RBKT                            &mo 2
             >;
         };
 
@@ -146,11 +146,11 @@
 
         layer_symbol {
             bindings = <
- &trans           &trans          &trans          &trans             &trans            &trans            &trans                                                  &trans     &trans         &trans                &trans                 &trans         &trans         &trans
- &trans  &kp EXCLAMATION    &kp QUESTION    &kp UP_ARROW  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE            &trans                                                  &trans  &kp EQUAL      &kp UNDER        &kp LEFT_BRACE        &kp RIGHT_BRACE       &kp STAR  &macro_a_ring
- &trans            &none  &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT_ARROW            &trans            &trans  &trans  &trans                  &trans  &trans  &trans     &trans      &kp MINUS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &macro_o_dots  &macro_a_dots
- &trans        &kp GRAVE       &kp TILDE        &kp PIPE           &kp AMPS            &trans                            &trans                  &trans                     &trans  &kp AMPERSAND      &kp LEFT_BRACKET      &kp RIGHT_BRACKET       &kp PLUS         &trans
- &trans           &trans          &trans          &trans             &trans                              &trans  &trans  &trans                  &trans  &trans  &trans                    &trans                &trans                 &trans         &trans         &trans
+     &trans   &kp EXCL     &kp AT_SIGN        &kp HASH         &kp DOLLAR    &kp PERCENT             &none                                                   &none  &kp CARET  &kp AMPERSAND                 &none                  &none          &none          &none
+     &trans  &kp GRAVE  &kp APOSTROPHE    &kp UP_ARROW  &kp DOUBLE_QUOTES      &kp SLASH             &none                                                   &none  &kp CARET      &kp UNDER        &kp LEFT_BRACE        &kp RIGHT_BRACE       &kp STAR  &macro_a_ring
+ &kp ESCAPE      &none  &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT_ARROW  &kp BACKSLASH             &none  &trans  &trans                  &trans  &trans   &none   &kp PLUS      &kp MINUS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &macro_o_dots  &macro_a_dots
+      &none      &none       &kp TILDE        &kp PIPE           &kp AMPS          &none                            &trans                  &trans                   &kp EXCL      &kp EQUAL      &kp LEFT_BRACKET      &kp RIGHT_BRACKET   &kp QUESTION         &trans
+     &trans     &trans           &none           &none              &none                           &trans  &trans  &trans                  &trans  &trans  &trans                    &trans                &trans                 &trans         &trans         &trans
             >;
         };
 
