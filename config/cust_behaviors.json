@@ -24,5 +24,23 @@
 			"code"
 		],
 		"type": "UD"
+	},
+	{
+		"code": "&hl_l",
+		"name": "Homerow Layer (left)",
+		"params": [
+			"layer",
+			"code"
+		],
+		"type": "UD"
+	},
+	{
+		"code": "&hl_r",
+		"name": "Homerow Layer (right)",
+		"params": [
+			"layer",
+			"code"
+		],
+		"type": "UD"
 	}
 ]
