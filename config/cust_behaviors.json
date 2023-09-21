@@ -1,24 +1,26 @@
 [
 	{
 		"code": "&hm",
-		"name": "&hm",
+		"name": "Homerow Mod (default)",
 		"params": [
 			"code"
 		],
 		"type": "UD"
 	},
 	{
-		"code": "&hm LALT",
-		"name": "&hm LALT",
+		"code": "&hm_l",
+		"name": "Homerow Mod (left)",
 		"params": [
+			"code",
 			"code"
 		],
 		"type": "UD"
 	},
 	{
-		"code": "&hm LGUI",
-		"name": "&hm LGUI",
+		"code": "&hm_r",
+		"name": "Homerow Mod (right)",
 		"params": [
+			"code",
 			"code"
 		],
 		"type": "UD"
