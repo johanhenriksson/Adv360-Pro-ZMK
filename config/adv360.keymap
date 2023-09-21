@@ -48,6 +48,7 @@
 
     hm_l: homerow_mods_left {
         compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_MODS_LEFT";
         #binding-cells = <2>;
         tapping-term-ms = <HM_TAPPING_TERM_MS>;
         quick_tap_ms = <HM_QUICKTAP_MS>;
@@ -58,6 +59,7 @@
 
     hm_r: homerow_mods_right {
         compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_MODS_RIGHT";
         #binding-cells = <2>;
         tapping-term-ms = <HM_TAPPING_TERM_MS>;
         quick_tap_ms = <HM_QUICKTAP_MS>;
@@ -68,6 +70,7 @@
 
     hl_l: homerow_layer_left {
         compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_LAYER_LEFT";
         #binding-cells = <2>;
         tapping-term-ms = <HM_TAPPING_TERM_MS>;
         quick_tap_ms = <HM_QUICKTAP_MS>;
@@ -78,6 +81,7 @@
 
     hl_r: homerow_layer_right {
         compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_LAYER_RIGHT";
         #binding-cells = <2>;
         tapping-term-ms = <HM_TAPPING_TERM_MS>;
         quick_tap_ms = <HM_QUICKTAP_MS>;
@@ -92,11 +96,11 @@
 
         default_layer {
             bindings = <
-                &kp EQUAL         &kp N1        &kp N2        &kp N3          &kp N4     &kp N5                   &tog 1                                                                               &mo 3     &kp N6          &kp N7        &kp N8        &kp N9                 &kp N0                        &kp MINUS
-                  &kp TAB          &kp Q         &kp W         &kp E           &kp R      &kp T              &macro_game                                                                         &macro_game      &kp Y           &kp U         &kp I         &kp O                  &kp P                         &kp BSLH
- &mt LC(LA(LS(LGUI))) ESC  &hm_l LCTRL A  &hm_l LALT S  &hm_l LGUI D  &hm_l LSHIFT F  &hl_l 5 G                    &none   &macro_tmux   &kp LALT                  &kp RCTRL  &kp RIGHT_COMMAND        &none  &hl_r 5 H  &hm_r RSHIFT J  &hm_r RGUI K  &hm_r RALT L  &hm_r RCTRL SEMICOLON  &mt RC(RA(RS(RGUI))) APOSTROPHE
-               &caps_word          &kp Z         &kp X         &kp C           &kp V      &kp B                                          &kp HOME                  &kp PG_UP                                      &kp N         &lt 6 M     &kp COMMA       &kp DOT               &kp FSLH                       &caps_word
-                    &mo 2      &kp GRAVE         &none      &kp LEFT       &kp RIGHT                       &kp BACKSPACE  &lt 7 DELETE  &lt 1 END                  &kp PG_DN   &mt RSHIFT ENTER    &kp SPACE                     &kp UP      &kp DOWN      &kp LBKT               &kp RBKT                            &mo 2
+                &kp EQUAL         &kp N1        &kp N2        &kp N3          &kp N4     &kp N5                   &tog 1                                                                                  &mo 3     &kp N6          &kp N7        &kp N8        &kp N9                 &kp N0                        &kp MINUS
+                  &kp TAB          &kp Q         &kp W         &kp E           &kp R      &kp T              &macro_game                                                                            &macro_game      &kp Y           &kp U         &kp I         &kp O                  &kp P                         &kp BSLH
+ &mt LC(LA(LS(LGUI))) ESC  &hm_l LCTRL A  &hm_l LALT S  &hm_l LGUI D  &hm_l LSHIFT F  &hl_l 5 G                    &none   &macro_tmux      &kp LALT                  &kp RCTRL  &kp RIGHT_COMMAND        &none  &hl_r 5 H  &hm_r RSHIFT J  &hm_r RGUI K  &hm_r RALT L  &hm_r RCTRL SEMICOLON  &mt RC(RA(RS(RGUI))) APOSTROPHE
+               &caps_word          &kp Z         &kp X         &kp C           &kp V      &kp B                                             &kp HOME                  &kp PG_UP                                      &kp N         &lt 6 M     &kp COMMA       &kp DOT               &kp FSLH                       &caps_word
+                    &mo 2      &kp GRAVE         &none      &kp LEFT       &kp RIGHT                       &kp BACKSPACE  &lt 7 DELETE  &mt LGUI END                  &kp PG_DN   &mt RSHIFT ENTER    &kp SPACE                     &kp UP      &kp DOWN      &kp LBKT               &kp RBKT                            &mo 2
             >;
         };
 
@@ -165,7 +169,7 @@
     &trans         &trans  &kp LG(LS(NUMBER_3))    &kp LG(LC(LS(NUMBER_3)))     &kp LG(LC(LS(NUMBER_4)))       &trans            &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
     &trans  &kp LC(LG(Q))    &kp LC(DOWN_ARROW)                 &kp LG(TAB)             &kp LC(UP_ARROW)       &trans            &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
  &kp ENTER    &macro_tmux    &kp LC(LEFT_ARROW)             &kp LG(LS(TAB))          &kp LC(RIGHT_ARROW)  &macro_spot            &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-    &trans          &none             &kp LG(X)                   &kp LG(C)                    &kp LG(V)    &kp LG(N)                            &trans                  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+    &trans      &kp LG(Z)             &kp LG(X)                   &kp LG(C)                    &kp LG(V)    &kp LG(N)                            &trans                  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
     &trans  &kp LG(COMMA)                &trans  &kp LC(LA(LS(LEFT_ARROW)))  &kp LC(LA(LS(RIGHT_ARROW)))                         &trans  &trans  &trans                  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
