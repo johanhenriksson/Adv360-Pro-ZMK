@@ -1,1 +1,26 @@
-[]
+[
+	{
+		"code": "&hm",
+		"name": "&hm",
+		"params": [
+			"code"
+		],
+		"type": "UD"
+	},
+	{
+		"code": "&hm LALT",
+		"name": "&hm LALT",
+		"params": [
+			"code"
+		],
+		"type": "UD"
+	},
+	{
+		"code": "&hm LGUI",
+		"name": "&hm LGUI",
+		"params": [
+			"code"
+		],
+		"type": "UD"
+	}
+]
