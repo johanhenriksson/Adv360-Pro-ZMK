@@ -65,9 +65,9 @@
         hold-trigger-key-positions = <KEYS_LEFT THUMBS>;
     };
 
-    hl_l: homerow_mods_left {
+    hl_l: homerow_layer_left {
         compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_MODS_LEFT";
+        label = "HOMEROW_LAYER_LEFT";
         #binding-cells = <2>;
         tapping-term-ms = <HM_TAPPING_TERM_MS>;
         quick_tap_ms = <HM_QUICKTAP_MS>;
@@ -76,9 +76,9 @@
         hold-trigger-key-positions = <KEYS_RIGHT THUMBS>;
     };
 
-    hl_r: homerow_mods_right {
+    hl_r: homerow_layer_right {
         compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_MODS_RIGHT";
+        label = "HOMEROW_LAYER_RIGHT";
         #binding-cells = <2>;
         tapping-term-ms = <HM_TAPPING_TERM_MS>;
         quick_tap_ms = <HM_QUICKTAP_MS>;
