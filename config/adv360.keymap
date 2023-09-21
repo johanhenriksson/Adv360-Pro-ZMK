@@ -146,11 +146,11 @@
 
         layer_symbol {
             bindings = <
-     &trans   &kp EXCL     &kp AT_SIGN        &kp HASH         &kp DOLLAR    &kp PERCENT             &none                                                   &none  &kp CARET  &kp AMPERSAND                 &none                  &none          &none          &none
+      &none   &kp EXCL     &kp AT_SIGN        &kp HASH         &kp DOLLAR    &kp PERCENT             &none                                                   &none  &kp CARET  &kp AMPERSAND                 &none                  &none          &none          &none
      &trans  &kp GRAVE  &kp APOSTROPHE    &kp UP_ARROW  &kp DOUBLE_QUOTES      &kp SLASH             &none                                                   &none  &kp CARET      &kp UNDER        &kp LEFT_BRACE        &kp RIGHT_BRACE       &kp STAR  &macro_a_ring
  &kp ESCAPE      &none  &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT_ARROW  &kp BACKSLASH             &none  &trans  &trans                  &trans  &trans   &none   &kp PLUS      &kp MINUS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &macro_o_dots  &macro_a_dots
-      &none      &none       &kp TILDE        &kp PIPE           &kp AMPS          &none                            &trans                  &trans                   &kp EXCL      &kp EQUAL      &kp LEFT_BRACKET      &kp RIGHT_BRACKET   &kp QUESTION         &trans
-     &trans     &trans           &none           &none              &none                           &trans  &trans  &trans                  &trans  &trans  &trans                    &trans                &trans                 &trans         &trans         &trans
+      &none      &none       &kp TILDE        &kp PIPE           &kp AMPS          &none                            &trans                  &trans                   &kp EXCL      &kp EQUAL      &kp LEFT_BRACKET      &kp RIGHT_BRACKET   &kp QUESTION          &none
+     &trans      &none           &none           &none              &none                           &trans  &trans  &trans                  &trans  &trans  &trans                     &none                 &none                  &none          &none         &trans
             >;
         };
 
