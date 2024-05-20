@@ -96,11 +96,11 @@
 
         default_layer {
             bindings = <
-                &kp EQUAL         &kp N1        &kp N2        &kp N3          &kp N4     &kp N5                   &tog 1                                                                                  &mo 3     &kp N6          &kp N7        &kp N8        &kp N9                 &kp N0                        &kp MINUS
-                  &kp TAB          &kp Q         &kp W         &kp E           &kp R      &kp T              &macro_game                                                                            &macro_game      &kp Y           &kp U         &kp I         &kp O                  &kp P                         &kp BSLH
- &mt LC(LA(LS(LGUI))) ESC  &hm_l LCTRL A  &hm_l LALT S  &hm_l LGUI D  &hm_l LSHIFT F  &hl_l 5 G                    &none   &macro_tmux      &kp LALT                  &kp RCTRL  &kp RIGHT_COMMAND        &none  &hl_r 5 H  &hm_r RSHIFT J  &hm_r RGUI K  &hm_r RALT L  &hm_r RCTRL SEMICOLON  &mt LC(LA(LS(LGUI))) APOSTROPHE
-               &kp LSHIFT          &kp Z         &kp X         &kp C           &kp V      &kp B                                             &kp HOME                  &kp PG_UP                                      &kp N         &lt 6 M     &kp COMMA       &kp DOT               &kp FSLH                       &caps_word
-                    &mo 2      &kp GRAVE         &none      &kp LEFT       &kp RIGHT                       &kp BACKSPACE  &lt 7 DELETE  &mt LGUI END                  &kp PG_DN   &mt RSHIFT ENTER    &kp SPACE                     &kp UP      &kp DOWN      &kp LBKT               &kp RBKT                            &mo 2
+                &kp EQUAL         &kp N1        &kp N2        &kp N3          &kp N4     &kp N5                              &tog 1                                                                                                &mo 3     &kp N6          &kp N7        &kp N8        &kp N9             &kp N0                   &kp MINUS
+                  &kp TAB          &kp Q         &kp W         &kp E           &kp R      &kp T                         &macro_game                                                                                          &macro_game      &kp Y           &kp U         &kp I         &kp O              &kp P             &kp KP_NUMBER_1
+ &mt LC(LA(LS(LGUI))) ESC  &hm_l LCTRL A  &hm_l LALT S  &hm_l LGUI D  &hm_l LSHIFT F  &hl_l 5 G                               &none           &macro_tmux   &kp LALT                  &kp RCTRL  &kp RIGHT_COMMAND                 &none  &hl_r 5 H  &hm_r RSHIFT J  &hm_r RGUI K  &hm_r RALT L  &hm_r RCTRL KP_N3  &mt LC(LA(LS(LGUI))) KP_N2
+               &kp LSHIFT          &kp Z         &kp X         &kp C           &kp V      &kp B                                                             &kp HOME                  &kp PG_UP                                               &kp N         &lt 6 M     &kp COMMA       &kp DOT           &kp FSLH                  &caps_word
+                    &mo 2      &kp GRAVE         &none      &kp LEFT       &kp RIGHT                       &mt LEFT_SHIFT BACKSPACE  &mt LEFT_COMMAND DEL  &lt 7 END                  &kp PG_DN    &mt RCTRL ENTER  &mt LEFT_SHIFT SPACE                     &kp UP      &kp DOWN      &kp LBKT           &kp RBKT                       &mo 2
             >;
         };
 
@@ -146,11 +146,11 @@
 
         layer_symbol {
             bindings = <
-      &none   &kp EXCL     &kp AT_SIGN        &kp HASH         &kp DOLLAR    &kp PERCENT             &none                                                   &none  &kp CARET  &kp AMPERSAND              &kp STAR                  &none          &none          &none
-     &trans  &kp GRAVE  &kp APOSTROPHE    &kp UP_ARROW  &kp DOUBLE_QUOTES      &kp SLASH             &none                                                   &none  &kp CARET      &kp UNDER        &kp LEFT_BRACE        &kp RIGHT_BRACE       &kp STAR  &macro_a_ring
- &kp ESCAPE      &none  &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT_ARROW  &kp BACKSLASH             &none  &trans  &trans                  &trans  &trans   &none   &kp PLUS      &kp MINUS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &macro_o_dots  &macro_a_dots
-      &none      &none       &kp TILDE        &kp PIPE           &kp AMPS          &none                            &trans                  &trans                   &kp EXCL      &kp EQUAL      &kp LEFT_BRACKET      &kp RIGHT_BRACKET   &kp QUESTION          &none
-     &trans      &none           &none           &none              &none                           &trans  &trans  &trans                  &trans  &trans  &trans                     &none                 &none                  &none          &none         &trans
+      &none     &kp EXCL     &kp AT_SIGN        &kp HASH       &kp DOLLAR    &kp PERCENT             &none                                                   &none  &kp CARET  &kp AMPERSAND              &kp STAR                  &none          &none              &none
+     &trans    &kp GRAVE        &kp HASH    &kp UP_ARROW       &kp DOLLAR  &kp BACKSLASH             &none                                                   &none   &kp PLUS      &kp UNDER        &kp LEFT_BRACE        &kp RIGHT_BRACE       &kp STAR   &kp SINGLE_QUOTE
+ &kp ESCAPE       &kp AT  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW          &none             &none  &trans  &trans                  &trans  &trans   &none      &none      &kp MINUS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp DOUBLE_QUOTES
+      &none  &kp PERCENT       &kp TILDE        &kp PIPE         &kp AMPS      &kp CARET                            &trans                  &trans                   &kp EXCL      &kp EQUAL      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp COLON       &kp CAPSLOCK
+     &trans        &none           &none           &none            &none                           &trans  &trans  &trans                  &trans  &trans  &trans                     &none                 &none                  &none          &none             &trans
             >;
         };
 
