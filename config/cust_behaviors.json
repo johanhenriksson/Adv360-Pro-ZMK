@@ -1,0 +1,46 @@
+[
+	{
+		"code": "&hm",
+		"name": "Homerow Mod (default)",
+		"params": [
+			"code"
+		],
+		"type": "UD"
+	},
+	{
+		"code": "&hm_l",
+		"name": "Homerow Mod (left)",
+		"params": [
+			"code",
+			"code"
+		],
+		"type": "UD"
+	},
+	{
+		"code": "&hm_r",
+		"name": "Homerow Mod (right)",
+		"params": [
+			"code",
+			"code"
+		],
+		"type": "UD"
+	},
+	{
+		"code": "&hl_l",
+		"name": "Homerow Layer (left)",
+		"params": [
+			"layer",
+			"code"
+		],
+		"type": "UD"
+	},
+	{
+		"code": "&hl_r",
+		"name": "Homerow Layer (right)",
+		"params": [
+			"layer",
+			"code"
+		],
+		"type": "UD"
+	}
+]
